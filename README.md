@@ -1,3 +1,7 @@
+WARNING
+My intention isn't to steal anything; my own home assistant isn't working because of a few lines of code. I've started a new project to fix them.
+
+
 ## ⚠️ Project Archived Notice
 
 This repository has been **archived** and is no longer maintained.

@@ -190,7 +190,7 @@ var Controller = (function () {
                 Controller.deviceMap.set(id, switchDevice);
                 return switchDevice;
             }
-            if (uiid_1.multiChannelSwitchUiidSet.has(data.extra.uiid)) {
+            if (uiid_1.multichannelSwitchUiidSet.has(data.extra.uiid) || (data.name && data.name.includes("koridor"))) {
                 var tmp = data;
                 var device = new CloudMultiChannelSwitchController_1.default({
                     deviceId: tmp.deviceid,

@@ -173,6 +173,7 @@ var Controller = (function () {
             }
         }
         if (type >= 4) {
+            console.log("--> BULUNAN CIHAZ ADI:", data.name, "UIID:", data.extra.uiid);
             if (uiid_1.switchUiidSet.has(data.extra.uiid)) {
                 var tmp = data;
                 var switchDevice = new CloudSwitchController_1.default({

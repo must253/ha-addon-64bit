@@ -173,7 +173,6 @@ var Controller = (function () {
             }
         }
         if (type >= 4) {
-            console.log("--> BULUNAN CIHAZ ADI:", data.name, "UIID:", data.extra.uiid);
             if (uiid_1.switchUiidSet.has(data.extra.uiid)) {
                 var tmp = data;
                 var switchDevice = new CloudSwitchController_1.default({
@@ -190,7 +189,7 @@ var Controller = (function () {
                 Controller.deviceMap.set(id, switchDevice);
                 return switchDevice;
             }
-            if (uiid_1.multichannelSwitchUiidSet.has(data.extra.uiid) || (data.name && data.name.includes("koridor"))) {
+           if (uiid_1.multichannelSwitchUiidSet.has(data.extra.uiid)) {
                 var tmp = data;
                 var device = new CloudMultiChannelSwitchController_1.default({
                     deviceId: tmp.deviceid,
